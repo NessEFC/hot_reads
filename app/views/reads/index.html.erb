@@ -1,0 +1,5 @@
+<h1>Hot Reads!</h1>
+
+<% @reads.each_with_index do |read, index| %>
+  <%= index + 1 %>) <%= read.link_url %><br>
+<% end %>
