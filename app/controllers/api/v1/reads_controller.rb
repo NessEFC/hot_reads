@@ -4,6 +4,7 @@ class Api::V1::ReadsController < ApplicationController
 
   def index
     @reads = Read.order_reads
+    render json: @reads, status: 201
   end
 
   def create
