@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :read do
-    link_url "MyString"
-    count 1
+    sequence(:link_url, (1..10).cycle) { |n| "http://website#{n}.com" }
+    sequence(:count, (1..10).cycle) { |n| n }
   end
 end
