@@ -1,5 +1,7 @@
 <h1>Hot Reads!</h1>
 
-<% @reads.each_with_index do |read, index| %>
-  <%= index + 1 %>) <%= read.link_url %><br>
-<% end %>
+<div class="hot-reads-list">
+  <% @reads.each_with_index do |read, index| %>
+    <p><%= index + 1 %>) <%= read.link_url %><br></p>
+  <% end %>
+</div>
